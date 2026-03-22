@@ -11,4 +11,5 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-      - N8N_WEBHOOK_URL=http://localhost:5678/webhook/test # Локальный n8n
+      - N8N_WEBHOOK_URL=http://host.docker.internal:5678/webhook/test
+    command: npm run dev
